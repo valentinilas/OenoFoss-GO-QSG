@@ -21,6 +21,9 @@
     padding: 2rem;
   }
 }
+.foss-logo{
+  cursor:pointer;
+}
 
 /* Intro page */
 .navbar {
@@ -102,6 +105,11 @@
 /* wizard */
 .wizard .product-image-main {
   padding: 0rem 0 1rem 0;
+
+}
+.wizard .product-image-main img {
+min-width:250px;
+min-height:250px;
 }
 .wizard .intro-text{
   padding:1rem 0 0 0;
@@ -109,4 +117,11 @@
 .wizard .img-responsive{
   max-width:300px;
   height:auto;
+}
+.modal .divider{
+  margin:1rem 0;
+}
+.modal .helper-text{
+  padding-bottom:0;
+  padding-top:1rem;
 }

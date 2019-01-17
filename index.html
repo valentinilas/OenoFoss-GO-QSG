@@ -81,6 +81,54 @@
         </div>
       </div>
     </div>
+    <!-- Info nav Modal  -->
+    <div class="modal" id="modal-infobox">
+      <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header text-center">
+          <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
+
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            <img class="img-responsive" src="/assets/img/help_menu.png" alt="Information">
+            <p class="helper-text">
+              In the help menu you can watch the full installation video or call FOSS support for help.
+            </p>
+            <div class="divider"></div>
+
+            <img class="img-responsive" src="/assets/img/help_buttons.png" alt="Information">
+            <p class="helper-text">
+              Move forward by pressing the next button.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer text-right">
+          <a class="btn btn-link close-modal" href="#" aria-label="Close">Close</a>
+        </div>
+      </div>
+    </div>
+    <!-- Youtube video modal  -->
+    <div class="modal" id="modal-youtube">
+      <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header text-center">
+          <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
+
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            <div class="video-responsive">
+              <iframe class="video-responsive" width="560" height="315" src="https://www.youtube.com/embed/b8s1jIVolWM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer text-right">
+          <a class="btn btn-link close-modal" href="#" aria-label="Close">Close</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Intro -->
     <div class="container text-center intro-page">
       <div class="columns">
@@ -103,18 +151,18 @@
     <div class="container text-center wizard">
       <div class="columns">
         <div class="column col-12">
-          <div class="toast toast-primary">
+          <!-- <div class="toast toast-primary">
             Swipe left/right or use the next/back buttons to navigate.
             <button class="btn btn-clear float-right"></button>
-          </div>
+          </div> -->
           <div class="slide-container ">
             <!--  -->
             <div class="steps step-1">
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Open box no. 1 without damaging the box</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_01.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_01.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -122,8 +170,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Place the instrument on a firm table</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_02.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_02.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="b8s1jIVolWM" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -135,8 +183,8 @@
                   Put the waste tube into the hole of the waste container.
 
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_03.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_03.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -144,8 +192,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Remove the protective layer from the screen</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_04.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_04.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -153,8 +201,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Unlock the transportation lock</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_05.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_05.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -162,8 +210,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Place the tanks inside the instrument</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_06.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_06.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -171,8 +219,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Connect the network cable</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_07.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_07.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -180,8 +228,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Open the side door and remove the transport foam</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_08.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_08.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -189,8 +237,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Unscrew the cap from each container and remove the containers</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_09.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_09.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -198,8 +246,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Place the tanks inside the instrument</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_10.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_10.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -207,8 +255,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Add 2 x 2.5 ml of cleaning agent into the Clean container</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_11.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_11.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -216,8 +264,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Fill it up with demineralised water</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_12.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_12.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -225,8 +273,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Fill the Zero container with demineralised water</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_13.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_13.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -234,8 +282,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">Screw back the cap on each container. Make sure the tubes are inside the containers</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_14.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_14.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -245,8 +293,8 @@
                   Close the door.
                 </h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_15.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_15.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -256,8 +304,8 @@
                   and the wall plug
                 </h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_16.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_16.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -268,8 +316,8 @@
                   This is OK. Leave it for now.
                 </h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_17.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_17.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -281,8 +329,8 @@
                   the 2 hours have passed
                 </h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_18.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_18.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -292,8 +340,8 @@
                   The instrument will automatically also perform a Clean
                 </h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_19.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_19.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
             <!--  -->
@@ -301,8 +349,8 @@
               <div class=" col-12 intro-text">
                 <h4 class="text-dark">A succesfull Zero setting shows this screen.</h4>
               </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/Step_20.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
+              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_20.svg" alt="OenoFoss&trade; GO"></div>
+              <div class="col-12"><a class="youtube-link" data-yt="qGrlWhzf9uU" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
             </div>
             <!--  -->
 

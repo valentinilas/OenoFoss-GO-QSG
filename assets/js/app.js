@@ -4,6 +4,7 @@ var slickOptions = {
   speed: 500,
   infinite:false,
   slidesToShow: 1,
+  lazyLoad: 'progressive',
   adaptiveHeight: true,
   prevArrow: document.querySelector('.btn-back'),
   nextArrow: document.querySelector('.btn-next')
@@ -32,14 +33,23 @@ $('.slide-container').on('afterChange init', function(event,slick, currentSlide,
 
 $(document).on("click",function(e){
   var clickTarget = e.target;
-
+  console.log(clickTarget);
   // modal
   if($(clickTarget).is("#help-button")){
     $('#modal-help').addClass('active');
 
   }
+  if($(clickTarget).is(".youtube-link")){
+    var yt = $(clickTarget).attr('data-yt');
+    console.log(yt);
+
+    $('#modal-youtube').find('iframe').attr('src','https://www.youtube.com/embed/'+yt+'?controls=0');
+    $('#modal-youtube').addClass('active');
+
+  }
   if($(clickTarget).is('.close-modal')){
-      $('#modal-help').removeClass('active');
+    $('#modal-youtube').find('iframe').attr('src','');
+      $('.modal').removeClass('active');
   }
   // toast
   if($(clickTarget).is('.toast, .toast .btn')){
@@ -52,6 +62,7 @@ $(document).on("click",function(e){
       $('.slide-container').slick(slickOptions);
     }
     $('.slide-container').slick('slickGoTo', 0);
+    $('#modal-infobox').addClass('active');
 
   }
   if($(clickTarget).is('.foss-logo')){
