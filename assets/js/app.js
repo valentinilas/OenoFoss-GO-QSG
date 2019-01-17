@@ -4,6 +4,7 @@ var slickOptions = {
   speed: 500,
   infinite:false,
   slidesToShow: 1,
+  adaptiveHeight: true,
   prevArrow: document.querySelector('.btn-back'),
   nextArrow: document.querySelector('.btn-next')
 
@@ -50,6 +51,7 @@ $(document).on("click",function(e){
     if(!$('.slide-container').hasClass('slick-initialized')){
       $('.slide-container').slick(slickOptions);
     }
+    $('.slide-container').slick('slickGoTo', 0);
 
   }
   if($(clickTarget).is('.foss-logo')){

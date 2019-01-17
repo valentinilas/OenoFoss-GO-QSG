@@ -98,3 +98,15 @@
 .slick-initialized .slick-slide:focus{
   outline:none;
 }
+
+/* wizard */
+.wizard .product-image-main {
+  padding: 0rem 0 1rem 0;
+}
+.wizard .intro-text{
+  padding:1rem 0 0 0;
+}
+.wizard .img-responsive{
+  max-width:300px;
+  height:auto;
+}
