@@ -31,8 +31,20 @@
   <!--  -->
   <!-- GTM -->
   <script>
-	(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PX6RQPW');
-</script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PX6RQPW');
+  </script>
 </head>
 
 <body>
@@ -382,11 +394,11 @@
             <div class="steps step-24">
               <div class=" col-12 intro-text">
                 <p class="text-dark">
-                  The installation is now completed.<br />
+                  <p> The installation is now completed.</p>
 
-                  To measure your first sample please proceed with the Quick Guide, sections:<br />
+                  <p> To measure your first sample please proceed with the Quick Guide, sections:
 
-                  "Sample Preparation" and "Analysing a Sample"
+                    "Sample Preparation" and "Analysing a Sample"</p>
 
                 </p>
               </div>
