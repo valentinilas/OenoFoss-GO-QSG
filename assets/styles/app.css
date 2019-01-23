@@ -83,7 +83,7 @@
 
 /* progress bar */
 .progress-bar {
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .progress {
@@ -143,23 +143,50 @@
   padding-top: 1rem;
 }
 
-@media (max-width:1280px) {}
+/* lang select */
+.language-select{
+  padding:2rem;
+}
+.language-select .column{
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
+}
+.language-select .btn{
+  display:block;
+}
 
-@media (max-width:960px) {}
+@media (max-width:1280px) {
+  .product-image-main img{
+    max-width:450px;
+  }
+}
 
-@media (max-width:840px) {}
+@media (max-width:960px) {
+  .product-image-main img{
+    max-width:400px;
+  }
+}
 
-@media (max-width:600px) {}
+@media (max-width:840px) {
+  .product-image-main img{
+    max-width:350px;
+  }
+}
+
+@media (max-width:600px) {
+  .product-image-main img{
+    max-width:300px;
+  }
+
+}
 
 @media (max-width:480px) {
-  .steps h4 {
-    font-size: 0.9rem;
-    line-height: 1.1;
-  }
-  .wizard .product-image-main img{
+
+  .product-image-main img{
     max-width:250px;
   }
   .intro-text{
     min-height:100px;
   }
+
 }

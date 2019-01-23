@@ -25,14 +25,20 @@ $('.slide-container').on('afterChange init', function(event, slick, currentSlide
   $('.slide-current-number').text(slideCurrent + 1);
   $('.slide-total-number').text(slideCount);
 
-  console.log(slideCount);
-  console.log(slideCurrent);
+
+
   if((slideCurrent + 1) == slideCount){
     //hide next button at the end
-    $('.btn-next').addClass('d-none');
+    $('.btn-next').addClass('disabled');
   }
   else{
-    $('.btn-next').removeClass('d-none');
+    $('.btn-next').removeClass('disabled');
+  }
+  if(slideCurrent == 0){
+    $('.btn-back').addClass('disabled');
+  }
+  else{
+    $('.btn-back').removeClass('disabled');
   }
 
 
@@ -43,7 +49,7 @@ $('.slide-container').on('afterChange init', function(event, slick, currentSlide
 
 $(document).on("click",function(e){
   var clickTarget = e.target;
-  console.log(clickTarget);
+
   // modal
   if($(clickTarget).is("#help-button")){
     $('#modal-help').addClass('active');
@@ -51,7 +57,6 @@ $(document).on("click",function(e){
   }
   if($(clickTarget).is(".youtube-link")){
     var yt = $(clickTarget).attr('data-yt');
-    console.log(yt);
 
     $('#modal-youtube').find('iframe').attr('src','https://www.youtube.com/embed/'+yt+'?controls=0');
     $('#modal-youtube').addClass('active');

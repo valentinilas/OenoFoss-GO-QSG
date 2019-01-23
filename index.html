@@ -4,7 +4,7 @@
 <head lang="en-us">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>OenoFoss&trade; GO Installation Guide</title>
+  <title>OenoFoss&trade; GO Installation Guide | Select Language</title>
   <!--  -->
   <meta name="author" content="FOSS">
   <meta name="description" content="OenoFoss&trade; GO Installation Guide">
@@ -29,388 +29,52 @@
   <!--  -->
   <link rel="stylesheet" href="assets/styles/icomoon.css" type="text/css">
   <!--  -->
+  <!-- GTM -->
+  <script>
+	(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PX6RQPW');
+</script>
 </head>
 
 <body>
-  <div id="app" class="">
 
 
-    <header class="navbar">
-      <section class="navbar-section">
-        <!--  -->
-        <div class="slide-counter">
-          <span class="slide-current-number">1</span>/<span class="slide-total-number">12</span>
-        </div>
-      </section>
-      <section class="navbar-center">
-        <!-- logo -->
-        <img class="foss-logo img-responsive" src="/assets/img/foss-logo.svg" alt="Spectre.css">
-      </section>
-      <section class="navbar-section">
-        <a id="help-button" class="btn" href="#"><i class="icon icon-menu"></i> Help</a>
-      </section>
 
 
-    </header>
-    <!-- Help Modal  -->
-    <div class="modal" id="modal-help">
-      <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header text-center">
-          <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
-          <div class="modal-title h5">Help</div>
-        </div>
-        <div class="modal-body">
-          <div class="content">
-            <ul class="nav">
 
 
-              <li class="nav-item">
-                <a class="youtube-link" data-yt="be_V6q3yYac" href="#" class="btn btn-link"><i class="icon-play"></i> Watch the full installation video</a>
-              </li>
 
 
-              <li class="nav-item">
-                <a href="tel:+4570103370"><i class="icon-phone"></i> Call FOSS support</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="modal-footer text-right">
-          <a class="btn btn-link close-modal" href="#" aria-label="Close">Close</a>
-        </div>
-      </div>
-    </div>
-    <!-- Info nav Modal  -->
-    <div class="modal" id="modal-infobox">
-      <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header text-center">
-          <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
+<div id="app">
 
-        </div>
-        <div class="modal-body">
-          <div class="content">
-            <img class="img-responsive" src="/assets/img/help_menu.png" alt="Information">
-            <p class="helper-text">
-              In the help menu you can watch the full installation video or call FOSS support for help.
-            </p>
-            <div class="divider"></div>
-
-            <img class="img-responsive" src="/assets/img/help_buttons.png" alt="Information">
-            <p class="helper-text">
-              Move forward by pressing the next button.
-            </p>
-          </div>
-        </div>
-        <div class="modal-footer text-right">
-          <a class="btn btn-link close-modal" href="#" aria-label="Close">Close</a>
-        </div>
-      </div>
-    </div>
-    <!-- Youtube video modal  -->
-    <div class="modal" id="modal-youtube">
-      <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header text-center">
-          <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
-
-        </div>
-        <div class="modal-body">
-          <div class="content">
-            <div class="video-responsive">
-              <iframe class="video-responsive" width="560" height="315" src="https://www.youtube.com/embed/b8s1jIVolWM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer text-right">
-          <a class="btn btn-link close-modal" href="#" aria-label="Close">Close</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Intro -->
-    <div class="container text-center intro-page">
-      <div class="columns">
-        <div class="column col-12 intro-text">
-          <h1 class="text-gray h3">Installation Guide <strong class="text-dark d-block h1">OenoFoss&trade; GO</strong></h1>
-        </div>
-      </div>
-      <div class="columns product-image-main">
-        <div class="column col-12"><img class="img-responsive" src="/assets/img/OenoFoss_FREE.png" alt="OenoFoss&trade; GO"></div>
-      </div>
-      <div class="columns main-nav-section">
-        <div class="column col-12">
-          <button class="btn btn-lg  initialize-app">BEGIN INSTALLATION</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Wizard -->
-
-    <div class="container text-center wizard">
+    <!-- Language select -->
+    <div class="container text-center language-select">
       <div class="columns">
         <div class="column col-12">
-
-          <div class="slide-container ">
-            <!--  -->
-            <div class="steps step-1">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Open box no. 1 without damaging the box</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" src="/assets/img/box.svg" alt="OenoFoss&trade; GO"></div>
-
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-2">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Place the instrument on a firm table</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_01.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-3">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Align the front of the instrument with the front
-                  border of the table to ensure a vertical position
-                  of the waste tube.
-                  Put the waste tube into the hole of the waste container.
-
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_01.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-4">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Remove the protective layer from the screen</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_02.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-5">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Unlock the transportation lock</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_03.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="nkUxTTRk1J0" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-6">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Connect the network cable</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_04.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-7">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Open the side door and remove the transport foam</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_05.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-
-
-            <!--  -->
-            <div class="steps step-8">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Unscrew the cap from each container and remove the containers</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_05.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-
-            <!--  -->
-            <div class="steps step-9">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Add 2 x 2.5 ml of cleaning agent into the Clean container</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_06.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-10">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Fill it up with demineralised water</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_07.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-11">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Fill the Zero container with demineralised water</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_07.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-12">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Screw back the cap on each container. Make sure the tubes are inside the containers</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_09.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-13">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Put back the containers in the instrument.
-                  Close the door.
-                </h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_09.svg" alt="OenoFoss&trade; GO"></div>
-              <div class="col-12"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Play help video</a></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-14">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Connect the power supply cable to the instrument
-                  and the wall plug
-                </h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_10.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-15">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">The screen lights up after approx. 20 seconds
-                  This screen will display during warmup.
-                  This is OK. Leave it for now.
-                </h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_12.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-16">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">The instrument will now warmup for 2 hours.
-
-
-                </h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_11.svg" alt="OenoFoss&trade; GO"></div>
-              <h4 class="text-dark">
-
-                Please proceed with the installation only after
-                the 2 hours have passed
-              </h4>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-17">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Press Start to perform a Zero setting.
-                  The instrument will automatically also perform a Clean
-                </h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_12.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-18">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">A succesfull Zero setting shows this screen.</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_15.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-19">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Go into the Care view and select Self Test.</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_16.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-20">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Press Start to initiate the Self Test.</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_17.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-21">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Wait until all three tests have completed.</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_18.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-22">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">Go back to the Result view.</h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_19.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-23">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">The instrument is ready for analysis when the pipette lamp gives a clear light and the Instrument
-                  State icon is OK
-                </h4>
-              </div>
-              <div class="product-image-main col-12"><img class="img-responsive" data-lazy="/assets/img/Step_20.svg" alt="OenoFoss&trade; GO"></div>
-            </div>
-            <!--  -->
-            <!--  -->
-            <div class="steps step-24">
-              <div class=" col-12 intro-text">
-                <h4 class="text-dark">The installation is
-                  The installation is now completed.
-
-                  To measure your first sample please proceed with the Quick Guide, sections:
-
-                  "Sample Preparation" and "Analysing a Sample"
-
-                </h4>
-              </div>
-            </div>
-            <!--  -->
-
-
-          </div>
+          <h1 class="text-dark">Select Language</h1>
         </div>
       </div>
-      <div class="columns progress-bar">
+
+      <div class="columns lang-selector">
         <div class="column col-12">
-          <div class="progress bg-gray">
-            <span class="progress__inner bg-success">
-          </div>
+
+          <a class="btn btn-lg" href="EN.html">English</a>
         </div>
-      </div>
-      <div class="columns main-nav-section">
         <div class="column col-12">
-          <button class="btn btn-lg btn-back">BACK</button>
-          <button class="btn btn-lg btn-primary btn-next">NEXT</button>
+          <a class="btn btn-lg" href="ES.html">Spanish</a>
         </div>
+        <div class="column col-12">
+          <a class="btn btn-lg" href="IT.html">Italian</a>
+        </div>
+
       </div>
     </div>
 
+</div>
 
 
 
-  </div>
+
+
   <!--  -->
   <script src="/dist/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="/dist/SlickSlider/slick.min.js" type="text/javascript"></script>
