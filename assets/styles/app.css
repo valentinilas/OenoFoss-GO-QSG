@@ -121,8 +121,8 @@
 }
 
 .wizard .product-image-main img {
-  min-width: 250px;
-  min-height: 250px;
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .wizard .intro-text {
@@ -186,11 +186,21 @@
   .wizard .product-image-main img {
     max-width:250px;
   }
-  .intro-text{
-    /* min-height:100px; */
-  }
+
   .steps{
     min-height:410px;
+  }
+
+}
+@media (max-width:360px) {
+
+  .product-image-main img,
+  .wizard .product-image-main img {
+    max-width:220px;
+  }
+
+  .steps{
+    min-height:380px;
   }
 
 }
