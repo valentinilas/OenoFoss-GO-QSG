@@ -77,9 +77,9 @@
   display: block;
 }
 
-.main-nav-section {
+/* .main-nav-section {
   padding-top: 1rem;
-}
+} */
 
 /* progress bar */
 .progress-bar {
@@ -143,6 +143,12 @@
   padding-top: 1rem;
 }
 
+/* youtube links */
+
+.yt-container{
+  padding-bottom:1rem;
+}
+
 /* lang select */
 .language-select{
   padding:2rem;
@@ -185,9 +191,13 @@
   .product-image-main img,
   .wizard .product-image-main img {
     max-width:220px;
+
+  }
+  .wizard .product-image-main{
+    padding-bottom:0.5rem;
   }
   .steps{
-    min-height:390px;
+    min-height:370px;
   }
   .wizard .intro-text {
     padding: 0;
