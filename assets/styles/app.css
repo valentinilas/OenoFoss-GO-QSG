@@ -182,11 +182,15 @@
 
 @media (max-width:480px) {
 
-  .product-image-main img{
+  .product-image-main img,
+  .wizard .product-image-main img {
     max-width:250px;
   }
   .intro-text{
     /* min-height:100px; */
+  }
+  .steps{
+    min-height:410px;
   }
 
 }
