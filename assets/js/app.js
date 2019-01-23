@@ -1,4 +1,4 @@
-// slick
+// slick slider
 var slickOptions = {
   dots: false,
   speed: 500,
@@ -14,7 +14,7 @@ var slickOptions = {
 var $progressBar = $('.progress__inner');
 var $progressBarLabel = $( '.slider__label' );
 
-$('.slide-container').on('afterChange init', function(event,slick, currentSlide, nextSlide){
+$('.slide-container').on('afterChange init', function(event, slick, currentSlide, nextSlide){
 
   var slideCount = slick.slideCount;
   var slideCurrent = slick.currentSlide;
@@ -24,6 +24,16 @@ $('.slide-container').on('afterChange init', function(event,slick, currentSlide,
 
   $('.slide-current-number').text(slideCurrent + 1);
   $('.slide-total-number').text(slideCount);
+
+  console.log(slideCount);
+  console.log(slideCurrent);
+  if((slideCurrent + 1) == slideCount){
+    //hide next button at the end
+    $('.btn-next').addClass('d-none');
+  }
+  else{
+    $('.btn-next').removeClass('d-none');
+  }
 
 
 });
@@ -51,10 +61,7 @@ $(document).on("click",function(e){
     $('#modal-youtube').find('iframe').attr('src','');
       $('.modal').removeClass('active');
   }
-  // toast
-  if($(clickTarget).is('.toast, .toast .btn')){
-    $('.toast').addClass('d-none');
-  }
+
   // progress
   if($(clickTarget).is('.initialize-app')){
     $('#app').addClass('initialized');
