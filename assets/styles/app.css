@@ -184,20 +184,19 @@
 
   .product-image-main img,
   .wizard .product-image-main img {
-    max-width:250px;
+    max-width:220px;
   }
-
   .steps{
-    min-height:410px;
+    min-height:390px;
+  }
+  .wizard .intro-text {
+    padding: 0;
   }
 
 }
 @media (max-width:360px) {
 
-  .product-image-main img,
-  .wizard .product-image-main img {
-    max-width:220px;
-  }
+
 
   .steps{
     min-height:380px;
