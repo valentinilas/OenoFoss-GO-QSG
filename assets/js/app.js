@@ -51,24 +51,24 @@ $(document).on("click",function(e){
   var clickTarget = e.target;
 
   // modal
-  if($(clickTarget).is("#help-button")){
+  if($(clickTarget).closest("#help-button")){
     $('#modal-help').addClass('active');
 
   }
-  if($(clickTarget).is(".youtube-link")){
+  if($(clickTarget).closest(".youtube-link")){
     var yt = $(clickTarget).attr('data-yt');
 
     $('#modal-youtube').find('iframe').attr('src','//www.youtube.com/embed/'+yt+'?controls=0');
     $('#modal-youtube').addClass('active');
 
   }
-  if($(clickTarget).is('.close-modal')){
+  if($(clickTarget).closest('.close-modal')){
     $('#modal-youtube').find('iframe').attr('src','');
       $('.modal').removeClass('active');
   }
 
   // progress
-  if($(clickTarget).is('.initialize-app')){
+  if($(clickTarget).closest('.initialize-app')){
     $('#app').addClass('initialized');
     if(!$('.slide-container').hasClass('slick-initialized')){
       $('.slide-container').slick(slickOptions);
@@ -77,7 +77,7 @@ $(document).on("click",function(e){
     $('#modal-infobox').addClass('active');
 
   }
-  if($(clickTarget).is('.foss-logo')){
+  if($(clickTarget).closest('.foss-logo')){
     $('#app').removeClass('initialized')
   }
 });
