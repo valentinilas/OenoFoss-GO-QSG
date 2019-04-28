@@ -58,7 +58,7 @@ $(document).on("click",function(e){
   if($(clickTarget).is(".youtube-link")){
     var yt = $(clickTarget).attr('data-yt');
 
-    $('#modal-youtube').find('iframe').attr('src','https://www.youtube.com/embed/'+yt+'?controls=0');
+    $('#modal-youtube').find('iframe').attr('src','//www.youtube.com/embed/'+yt+'?controls=0');
     $('#modal-youtube').addClass('active');
 
   }
