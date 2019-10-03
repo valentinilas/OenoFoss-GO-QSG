@@ -154,7 +154,6 @@
 
 .language-select .column {
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .language-select .btn {
@@ -211,3 +210,4 @@
     min-height: 370px;
   }
 }
+
