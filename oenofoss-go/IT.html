@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="it-it">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guida all'installazione OenoFoss™ Go</title>
+    <!--  -->
+    <meta name="author" content="FOSS">
+    <meta name="description" content="Guida all'installazione OenoFoss™ Go">
+    <meta name="keywords" content="Guida all'installazione OenoFoss™ Go">
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="/dist/SlickSlider/slick.css" />
+    <!--  -->
+    <link rel="stylesheet" href="../dist/Spectre/spectre.min.css">
+    <link rel="stylesheet" href="../dist/Spectre/spectre-exp.min.css">
+    <link rel="stylesheet" href="../dist/Spectre/spectre-icons.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="../assets/styles/app.css" type="text/css">
+    <!--  -->
+    <!--  -->
+    <link rel="stylesheet" href="../assets/styles/icomoon.css" type="text/css">
+    <!--  -->
+    <!-- GTM -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PX6RQPW');
+    </script>
+</head>
+
+<body>
+    <div id="app" class="">
+
+
+        <header class="navbar">
+            <section class="navbar-section">
+                <!--  -->
+                <div class="slide-counter">
+                    <span class="slide-current-number">1</span>/<span class="slide-total-number">12</span>
+                </div>
+            </section>
+            <section class="navbar-center">
+                <!-- logo -->
+                <img class="foss-logo img-responsive" src="../assets/img/foss-logo.svg" alt="Spectre.css">
+            </section>
+            <section class="navbar-section">
+                <a id="help-button" class="btn" href="#"><i class="icon icon-menu"></i></a>
+            </section>
+
+
+        </header>
+        <!-- Help Modal  -->
+        <div class="modal" id="modal-help">
+            <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header text-center">
+                    <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
+                    <div class="modal-title h5">Assistenza</div>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <ul class="nav">
+
+
+                            <li class="nav-item">
+                                <a class="youtube-link" data-yt="be_V6q3yYac" href="#" class="btn btn-link"><i class="icon-play"></i> Guarda tutto il video dell'installazione</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a href="tel:+4570103370"><i class="icon-phone"></i> Contattare l'assistenza FOSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <a class="btn btn-link close-modal" href="#" aria-label="Close">Chiudi la finestra</a>
+                </div>
+            </div>
+        </div>
+        <!-- Info nav Modal  -->
+        <div class="modal" id="modal-infobox">
+            <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header text-center">
+                    <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
+
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <!-- <img class="img-responsive" src="../assets/img/help_menu.png" alt="Information"> -->
+                        <span class="btn close-modal"><i class="icon icon-menu"></i></span>
+                        <p class="helper-text">
+                            Nel menu Assistenza è possibile guardare il video di installazione o contattare l'assistenza FOSS.
+
+                        </p>
+                        <div class="divider"></div>
+
+                        <!-- <img class="img-responsive" src="../assets/img/help_buttons.png" alt="Information"> -->
+                        <span class="btn btn-lg close-modal">Indietro</span>
+                        <span class="btn btn-lg btn-primary close-modal">Avanti</span>
+                        <p class="helper-text">
+                            Per andare avanti premere il pulsante "avanti"
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <a class="btn btn-link close-modal" href="#" aria-label="Close">Chiudi la finestra</a>
+                </div>
+            </div>
+        </div>
+        <!-- Youtube video modal  -->
+        <div class="modal" id="modal-youtube">
+            <a href="#" class="modal-overlay close-modal" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header text-center">
+                    <a href="#" class="btn btn-clear float-right close-modal" aria-label="Close"></a>
+
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="video-responsive">
+                            <iframe class="video-responsive" width="560" height="315" src="#" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <a class="btn btn-link close-modal" href="#" aria-label="Close">Close</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="container text-center intro-page">
+            <div class="columns">
+                <div class="column col-12 intro-text">
+                    <h1 class="text-gray h3">Guida all'installazione <strong class="text-dark d-block h1">OenoFoss&trade; GO</strong></h1>
+                </div>
+            </div>
+            <div class="columns product-image-main">
+                <div class="column col-12"><img class="img-responsive" src="../assets/img/OenoFoss_FREE.png" alt="OenoFoss&trade; GO"></div>
+            </div>
+            <div class="columns main-nav-section">
+                <div class="column col-12">
+                    <button class="btn btn-lg  initialize-app">Inizio installazione</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wizard -->
+
+        <div class="container text-center wizard">
+            <div class="columns">
+                <div class="column col-12">
+
+                    <div class="slide-container ">
+                        <!--  -->
+                        <div class="steps step-1">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Aprire lo scatolone n. 1 prestando attenzione a non danneggiarlo.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" src="../assets/img/box.svg" alt="OenoFoss&trade; GO"></div>
+
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-2">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Collocare lo strumento su una superficie stabile</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_01.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-3">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Allineare la parte anteriore dello strumento con il bordo anteriore del piano in modo da garantire la posizione verticale del tubo di scarico. Posizionare il tubo di scarico nel foro del contenitore per scarico.
+
+                                </p>
+
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_01.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-4">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Rimuovere la pellicola protettiva dallo schermo.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_02.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-5">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Aprire il lucchetto per il trasporto.</p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_03.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="nkUxTTRk1J0" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-6">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Collegare il cavo di rete.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_04.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-7">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Aprire lo sportello laterale e rimuovere la schiuma espansa utilizzata per il trasporto.</p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_05.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+
+
+                        <!--  -->
+                        <div class="steps step-8">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Svitare il coperchio di ciascun contenitore e rimuovere i contenitori.</p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_05.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+                        <div class="steps step-9">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Aggiungere 2 x 2.5 ml di detergente nel contenitore Clean.</p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_06.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-10">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Riempirlo con acqua demineralizzata.</p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_07.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-11">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Riempire il contenitore Zero con acqua demineralizzata.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_07.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-12">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Riavvitare il coperchio su ogni contenitore. Verificare che i tubi siano dentro i contenitori.</p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_09.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-13">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Introdurre nuovamente i contenitori nello strumento. Chiudere lo sportello.
+                                </p>
+                            </div>
+                            <div class="product-image-main col-12 "><img class="img-responsive" data-lazy="../assets/img/Step_09.svg" alt="OenoFoss&trade; GO"></div>
+                            <div class="col-12 yt-container"><a class="youtube-link" data-yt="te64bf8vPIk" href="#" class="btn btn-link"><i class="icon-play"></i> Avviare il video di aiuto</a></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-14">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Collegare il cavo di alimentazione allo strumento e alla presa a parete.
+                                </p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_10.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-15">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Lo schermo si accende per circa 20 secondi. Questa schermata sará presente durante il tempo di riscaldamento. Questa schermata è normale. Per il momento non fare niente.
+                                </p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_12.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-16">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Lo strumento adesso effettua un riscaldamento di 2 ore.
+
+
+                                </p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_11.svg" alt="OenoFoss&trade; GO"></div>
+                            <p class="text-dark">
+
+                                Procedere pertanto con l'installazione solo dopo che saranno trascorse le 2 ore.
+
+                            </p>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-17">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Passate le due ore di riscaldamento, premere Start per effettuare l'impostazione dello zero. Lo strumento effettuerà automaticamente anche la pulizia con Clean.
+
+
+                                </p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_12.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-18">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Questa schermata mostra un'impostazione dello zero avvenuta con successo.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_15.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-19">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Accedere alla visualizzazione Servizio e selezionare Test automatico.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_16.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-20">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Premere Start per avviare il Test automatico.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_17.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-21">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Attendere fino al completamento di tutti e tre i test.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_18.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-22">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Tornare alla visualizzazione Risultato.</p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_19.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-23">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">Lo strumento è pronto per l'analisi quando la spia della pipetta rilascia una luce chiara e l'icona di stato dello strumento è OK.
+
+                                </p>
+                            </div>
+                            <div class="product-image-main col-12"><img class="img-responsive" data-lazy="../assets/img/Step_20.svg" alt="OenoFoss&trade; GO"></div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="steps step-24">
+                            <div class=" col-12 intro-text">
+                                <p class="text-dark">
+                                    <p> L'installazione è completata. </p>
+
+
+                                    <p>Per misurare il primo campione, seguire la Guida rapida, sezioni: "Preparazione campione" e "Analisi del campione"</p>
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <!--  -->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns main-nav-section">
+                <div class="column col-12 progress-bar">
+                    <div class="progress bg-gray">
+                        <span class="progress__inner bg-success">
+          </div>
+        </div>
+        <div class="column col-12">
+          <button class="btn btn-lg btn-back">Indietro</button>
+          <button class="btn btn-lg btn-primary btn-next">Avanti</button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <!--  -->
+  <script src="../dist/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="../dist/SlickSlider/slick.min.js" type="text/javascript"></script>
+  <script src="../assets/js/app.js" type="text/javascript"></script>
+
+
+  <!--  -->
+
+</body>
+
+</html>
